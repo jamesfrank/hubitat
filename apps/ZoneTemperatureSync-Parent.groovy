@@ -3,7 +3,7 @@
  *
  * Container app that manages one child app instance per zone.
  * Install this first; each zone is configured by adding a child app
- * ("Zone Temperature Sync - Zone") from this parent's settings page.
+ * ("Zone Temperature Sync Child") from this parent's settings page.
  *
  * Installation order:
  *   1. Install the "Zone Temperature Sync Thermostat" driver
@@ -38,7 +38,7 @@ def mainPage() {
             paragraph "Each zone averages readings from one or more sensors and mirrors the result to a virtual thermostat device visible in HomeKit."
             app(
                 name:    "zones",
-                appName: "Zone Temperature Sync - Zone",
+                appName: "Zone Temperature Sync Child",
                 namespace: "jamesfrank",
                 title:   "<b>➕ Add a New Zone</b>",
                 multiple: true
